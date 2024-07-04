@@ -1,0 +1,176 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #c9c5c5;
+} 
+nav{
+    font-family: 'Arial Black',sans-serif;
+  z-index:2;
+  position:fixed;
+  width:100vw;
+  text-align: center;
+  
+}
+/* #code-window{
+    
+    width: 100%;
+    height:600px;
+    overflow: hidden;
+} */
+ #rhombus{
+    position: absolute;
+    top:0px;
+    left:0px;
+    
+    height: 600px;
+    width: 500px;
+    background: linear-gradient(60deg,rgba(76, 67, 141, 0.8) 50%,transparent 50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+    transform: translateX(-400px);
+ }
+ #code-window:hover{
+    #rhombus{opacity: 1;
+        transform: translateX(0);
+    }
+ }
+ #text{
+    font-weight: 900;
+    font-size:90px;
+    color:rgb(255, 255, 255);  
+ }
+  
+ 
+video{
+   height:600px;
+    width:100%;
+    object-fit: cover; 
+     /* above line is very important */
+}
+ a{
+    text-decoration: none; 
+    margin:2em;
+    color: white;
+}
+#hobby{
+    text-align: center;
+    font-family: cursive;
+    font-weight: 900;
+    background-color: #c9c5c5;
+    margin-top: -5px;padding-top: 5px;
+  
+     
+}
+#hobby-items{
+    display: flex;
+    justify-content: space-around;
+    background-color: #c9c5c5;
+    margin-top: 50px;
+}
+#hobby-items img{
+    height: 200px;
+}
+#card-music{
+    height:250px;
+    width: 350px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+     cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#card-music:hover{
+    height:320px;
+}
+#card-music:hover>#content-music{
+    opacity: 1;
+    transform: translateY(-150px);
+}
+#image-music{
+    position: relative;
+    transform: translateY(-30px);
+    height: 100%;
+    width: 100%;
+}
+#image-music img{
+    border-radius: 20px;
+}
+#content-music{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 0.5s;
+}
+#card-swimming{
+    height:250px;
+    width: 340px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+     cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #fff;
+}
+#image-swimming{
+    position: relative;
+    transform: translateY(-30px);
+    height: 100%;
+    width: 100%;
+}
+#image-swimming img{
+    border-radius: 20px;
+}
+#content-swimming{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 0.5s;
+}
+#card-swimming:hover{
+    height: 320px;
+}
+#card-swimming:hover>#content-swimming
+{
+    opacity: 1;
+    transform: translateY(-150px)
+}
+#card-coding{
+    height:250px;
+    width: 250px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+     cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #fff;
+}
+#image-coding img{
+    border-radius: 20px;
+    width: 250px;
+}
+#image-coding{
+    position: relative;
+    transform: translateY(-30px);
+    height: 100%;
+    width: 100%;
+}
+#content-coding{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 0.5s;
+}
+#card-coding:hover{
+    height: 320px;
+}
+#card-coding:hover>#content-coding
+{
+    opacity: 1;
+    transform: translateY(-150px)
+}
